@@ -81,3 +81,65 @@ c = số lượng tag
 4.Nếu Rule A thêm !important, element có màu gì? Tại sao?-->!important ưu tiên cao hơn specificity thông thường nên element sẽ có màu đen
 
 PHẦN B:
+
+Câu B2:
+- Hộp 1 (content-box) Chiều rộng thực tế = 350px => Tổng chiều rộng thực tế: 300 + 40 + 10 = 350px
+- Hộp 2 (border-box):Chiều rộng thực tế = 300pxm=> Tổng chiều rộng thực tế vẫn là 300px
+- Sự khác biệt
++ content-box:
+  width chỉ tính phần nội dung và Padding với border sẽ làm phần tử to hơn.
++ border-box:
+  width bao gồm luôn content + padding + border và Kích thước phần tử dễ kiểm soát hơn khi làm layout.
+  
+Câu B3:
+
+| Rule | Specificity |
+|---|---|
+| p | 0,0,1 |
+| body p | 0,0,2 |
+| .text | 0,1,0 |
+| p.text | 0,1,1 |
+| .text.highlight | 0,2,0 |
+| body p.text | 0,2,1 |
+| #demo | 1,0,0 |
+| p#demo | 1,0,1 |
+| #demo.highlight | 1,1,0 |
+| body p#demo.highlight | 1,1,1 |
+
+-> Element cuối cùng hiển thị màu gold
+vì Rule: body p#demo.highlight có specificity cao nhất là 1,1,1 .Nó được ưu tiên hơn các rules khác nên màu cuối cùng được áp dụng là gold
+-> Nếu thay đổi thứ tự rules thì kết quả KHÔNG đổi. Vì đổi đi thứ tự nhưng độ ưu tiên về specify vẫn vậy nên vẫn là màu gold
+
+Phần C:
+
+Câu C1:
+1. Chiều rộng thực tế của sidebar và content là:
+- Sidebar: vì mặc định là "box-sizing: content-box"-> chiều rộng thực tế là: 300 + 20*2 + 1*2=342(px)
+- content: chiều rộng thực tế là: 660 + 30*2 + 1*2 = 722px
+2. Layout bị vỡ do tổng chiều rộng của sidebar và content là : 342 + 722 > 960 (chiều rộng thực tế) -> nên layout bị vỡ hay nói cách khác .content không đủ chỗ đứng cạnh .sidebar kết quả .content bị rớt xuống dòng mới
+3. Hai cách sửa:
+Cách 1: dùng "border-box: padding + border được tính bên trong width" -> sửa:
+            .sidebar,
+            .content {
+                box-sizing: border-box;
+            }
+cách 2: không dùng border-box: giữ "box-sizing: content-box" thì giảm width:
+            .sidebar {
+                width: 258px;
+            }
+
+            .content {
+                width: 598px;
+            }
+Câu C2:
+1. "Sản phẩm A" (h2) có font-size = 20px và color = red
+2. "Mô tả sản phẩm" (p trong card featured) có color = blue(vì inherit là nhận màu của cha)
+3. "Sản phẩm B" (h2) có font-size = 20px và color = blue
+4. "Mô tả sản phẩm B" (p.highlight) có color =  green ;
+
+PHẦN D:
+
+Link video: 
+<a href="https://youtu.be/OkrJ8c9Zib0">
+    https://youtu.be/OkrJ8c9Zib0
+</a>
