@@ -21,3 +21,12 @@
             background-color: var(--bs-primary-hover);
             border-color: var(--bs-primary-hover);
         }
+    .py-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    }
+
+
+    .gap-4 { 
+        gap: 2rem; 
+    }
