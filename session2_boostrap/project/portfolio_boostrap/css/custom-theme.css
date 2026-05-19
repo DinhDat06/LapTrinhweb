@@ -1,0 +1,23 @@
+:root {
+            /* Primary: Teal */
+            --bs-primary: #14b8a6;
+            --bs-primary-hover: #0d9488;
+            --bs-primary-rgb: 20, 184, 166;
+
+            /* Secondary: Slate */
+            --bs-secondary: #64748b;
+            --bs-secondary-rgb: 100, 116, 139;
+        }
+
+    body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+    .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+    .btn-primary:hover {
+            background-color: var(--bs-primary-hover);
+            border-color: var(--bs-primary-hover);
+        }
