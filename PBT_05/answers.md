@@ -1,17 +1,17 @@
 Phần A:
 
 Câu A1: Viewport & Mobile-First
-1. Thẻ <meta vewport> chuẩn:
+1.Thẻ <meta vewport> chuẩn:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 - Giải thích từng thuộc tính:
 * name="viewport": Báo cho trình duyệt biết đây là cấu hình viewport (khu vực hiển thị).
 content: Chứa các giá trị cấu hình, cách nhau bởi dấu phẩy.
 * width=device-width: Cho viewport rộng bằng chiều rộng màn hình thiết bị (VD iPhone 14 = 390px). Không có thì trình duyệt mặc định ~980px rồi thu nhỏ lại.
 * initial-scale=1.0: Zoom ban đầu = 100%, không zoom in/out tự động.
-2.  Nếu thiếu meta viewport, iPhone sẽ:
+2. Nếu thiếu meta viewport, iPhone sẽ:
 Coi website là web desktop.Thu nhỏ toàn bộ trang lại và Chữ cực nhỏ phải zoom mới đọc được.Nút bấm khó nhấn ngoài ra Layout dễ bị vỡ và Có thể phải scroll ngang liên tục.Nó khiến cho Trang web sẽ rất khó sử dụng trên điện thoại.
 3. Mobile-First và Desktop-First khác nhau thế nào? Viết ví dụ CSS cho mỗi cách với breakpoint 768px. Tại sao Mobile-First được khuyên dùng?
-### Bảng so sánh Mobile-First và Desktop-First
+Bảng so sánh Mobile-First và Desktop-First
 a. 
 | Tiêu chí | Mobile-First (Hướng tiếp cận hiện đại) | Desktop-First (Hướng tiếp cận truyền thống) |
 | :--- | :--- | :--- |
