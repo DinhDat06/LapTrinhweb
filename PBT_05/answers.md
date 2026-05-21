@@ -159,6 +159,17 @@ SCSS là: CSS mở rộng,,Có biến ($),Có mixin (@mixin),Có nesting
 6. Cần bước gì để chuyển SCSS → CSS?
 Cần dùng SCSS Compiler để compile: SCSS → Compiler → CSS
 
+Phần B: 
+    # Cài sass (chưa có)
+    npm install -g sass
+
+    # Compile file style.scss ra style-compiled.css
+    sass scss/style.scss style-compiled.css
+
+    # Hoặc watch (tự compile khi lưu)
+    sass --watch scss/style.scss style-compiled.css
+
+    # Với VS Code: cài extension "Live Sass Compiler" → click "Watch Sass"
 Phần C:
 
 Câu C1:
