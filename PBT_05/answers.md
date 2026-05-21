@@ -27,7 +27,7 @@ b. Ví dụ cú pháp CSS trong Markdown
 .sidebar {
   width: 100%;
 }
-
+```
 /* Thiết bị màn hình lớn hơn (Tablet / Desktop) */
 @media (min-width: 768px) {
   .sidebar {
