@@ -12,14 +12,13 @@ content: Chứa các giá trị cấu hình, cách nhau bởi dấu phẩy.
 Coi website là web desktop.Thu nhỏ toàn bộ trang lại và Chữ cực nhỏ phải zoom mới đọc được.Nút bấm khó nhấn ngoài ra Layout dễ bị vỡ và Có thể phải scroll ngang liên tục.Nó khiến cho Trang web sẽ rất khó sử dụng trên điện thoại.
 3. Mobile-First và Desktop-First khác nhau thế nào? Viết ví dụ CSS cho mỗi cách với breakpoint 768px. Tại sao Mobile-First được khuyên dùng?
 Bảng so sánh Mobile-First và Desktop-First
-a. 
-| Tiêu chí | Mobile-First (Hướng tiếp cận hiện đại) | Desktop-First (Hướng tiếp cận truyền thống) |
-| :--- | :--- | :--- |
-| **Thứ tự ưu tiên** | Code cho mobile trước | Code cho desktop trước |
-| **Media Query** | Dùng `min-width` | Dùng `max-width` |
-| **Hướng phát triển** | Mở rộng dần lên tablet/desktop | Thu nhỏ dần xuống mobile |
-| **Hiệu năng** | Tối ưu hiệu năng mobile tốt hơn | Mobile phải tải nhiều CSS thừa |
-| **Xu hướng** | Được khuyên dùng hiện nay | Cách cũ |
+a.| Tiêu chí | Mobile-First (Hướng tiếp cận hiện đại) | Desktop-First (Hướng tiếp cận truyền thống) |
+| --- | --- | --- |
+| Thứ tự ưu tiên| Code cho mobile trước | Code cho desktop trước |
+| Media Query| Dùng `min-width` | Dùng `max-width` |
+|Hướng phát triển| Mở rộng dần lên tablet/desktop | Thu nhỏ dần xuống mobile |
+| Hiệu năng| Tối ưu hiệu năng mobile tốt hơn | Mobile phải tải nhiều CSS thừa |
+|Xu hướng| Được khuyên dùng hiện nay | Cách cũ |
 
 b. Ví dụ cú pháp CSS trong Markdown
 - Cấu trúc Mobile-First (min-width)
