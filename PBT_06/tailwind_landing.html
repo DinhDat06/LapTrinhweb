@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Landing Page TailwindCSS</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white transition duration-300">
+
+    <!-- Navbar -->
+    <header class="bg-white dark:bg-gray-800 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold text-blue-600 dark:text-yellow-400">
+                Đình Đạt Store
+            </h1>
+
+            <nav class="hidden md:flex gap-6 font-medium">
+                <a href="#home" class="hover:text-blue-500 dark:hover:text-yellow-300">
+                    Trang chủ
+                </a>
+
+                <a href="#products" class="hover:text-blue-500 dark:hover:text-yellow-300">
+                    Sản phẩm
+                </a>
+
+                <a href="#media" class="hover:text-blue-500 dark:hover:text-yellow-300">
+                    Media
+                </a>
+
+                <a href="#contact" class="hover:text-blue-500 dark:hover:text-yellow-300">
+                    Liên hệ
+                </a>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <button class="md:hidden bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Menu
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-20 px-6">
+
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Chào mừng đến với cửa hàng công nghệ
+        </h2>
+
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+            Khám phá những sản phẩm điện thoại mới nhất với hiệu năng mạnh mẽ,
+            pin trâu và giá thành hợp lý.
+        </p>
+
+        <a href="#products"
+            class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+            Mua ngay
+        </a>
+    </section>
+
+    <!-- Product Grid -->
+    <main id="products" class="container mx-auto px-6 py-16">
+
+        <h2 class="text-3xl font-bold text-center mb-12">
+            Sản phẩm nổi bật
+        </h2>
+
+        <!-- Grid responsive -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1 -->
+            <article
+                class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5">
+
+                <img
+                    src="https://lh3.googleusercontent.com/d/1YhmzxnK0AbFYBtbbKFduTMb-FULMDXp0"
+                    alt="Redmi Note 14"
+                    class="w-full h-52 object-cover rounded-lg mb-4">
+
+                <h3 class="text-xl font-semibold mb-2">
+                    Redmi Note 14
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Điện thoại cấu hình mạnh, pin 5000mAh và sạc nhanh 33W.
+                </p>
+
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    Xem thêm
+                </button>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+                class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5">
+
+                <img
+                    src="https://lh3.googleusercontent.com/d/1PRNwYNR9XFB1aeO4QZ7A47woWXqPo5LN"
+                    alt="IQOO Z9X"
+                    class="w-full h-52 object-cover rounded-lg mb-4">
+
+                <h3 class="text-xl font-semibold mb-2">
+                    Vivo IQOO Z9X
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Snapdragon 6 Gen 1 mạnh mẽ, pin 6000mAh siêu bền.
+                </p>
+
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    Xem thêm
+                </button>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+                class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5">
+
+                <img
+                    src="https://lh3.googleusercontent.com/d/1ZddbZGE_WYcGHMvZ6C9tK875V2PUzVKQ"
+                    alt="Samsung A16"
+                    class="w-full h-52 object-cover rounded-lg mb-4">
+
+                <h3 class="text-xl font-semibold mb-2">
+                    Samsung A16 Lite
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Chip G99 ổn định, pin 5000mAh đáp ứng nhu cầu cả ngày.
+                </p>
+
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    Xem thêm
+                </button>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+                class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                    alt="iPhone"
+                    class="w-full h-52 object-cover rounded-lg mb-4">
+
+                <h3 class="text-xl font-semibold mb-2">
+                    iPhone 15
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Thiết kế cao cấp, camera chất lượng và hiệu năng mạnh mẽ.
+                </p>
+
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    Xem thêm
+                </button>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Media Section -->
+    <section id="media" class="bg-gray-200 dark:bg-gray-800 py-16 px-6">
+
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Video giới thiệu
+        </h2>
+
+        <div class="max-w-4xl mx-auto">
+
+            <iframe
+                class="w-full h-[250px] md:h-[450px] rounded-xl shadow-lg"
+                src="https://www.youtube.com/embed/mHJQe3Xz88s"
+                title="YouTube video"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+    </section>
+
+    <!-- Responsive Image -->
+    <section class="container mx-auto px-6 py-16 text-center">
+
+        <h2 class="text-3xl font-bold mb-8">
+            Ảnh Responsive
+        </h2>
+
+        <img
+            src="https://lh3.googleusercontent.com/d/1vgszQHtjYiSL20YvfllCDMpkX6FD9xCU"
+            alt="Responsive"
+            class="mx-auto rounded-xl shadow-lg w-full md:w-2/3 lg:w-1/2">
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact"
+        class="bg-gray-900 text-white py-12 px-6">
+
+        <!-- Grid Footer -->
+        <div
+            class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">
+                    Đình Đạt Store
+                </h3>
+
+                <p class="text-gray-400">
+                    Chuyên cung cấp điện thoại chính hãng với giá tốt.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">
+                    Chính sách
+                </h3>
+
+                <ul class="space-y-2 text-gray-400">
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            Bảo hành
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            Đổi trả
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">
+                    Liên hệ
+                </h3>
+
+                <ul class="space-y-2 text-gray-400">
+                    <li>Email: dat@gmail.com</li>
+                    <li>Facebook: Nguyễn Đình Đạt</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">
+                    Theo dõi
+                </h3>
+
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600">
+                        Facebook
+                    </a>
+
+                    <a href="#"
+                        class="bg-pink-500 px-4 py-2 rounded-lg hover:bg-pink-600">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center text-gray-500 mt-10">
+            © 2025 Nguyễn Đình Đạt
+        </div>
+
+    </footer>
+
+</body>
+</html>
