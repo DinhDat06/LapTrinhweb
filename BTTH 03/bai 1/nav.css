@@ -1,0 +1,29 @@
+.navbar {
+    width: 90%;
+    margin: 20px auto 30px auto;
+    background: linear-gradient(to right, #ffffff, #e3f2fd);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    height: auto;
+    gap: 15%;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.nav-box {
+    text-align: center;
+}
+
+.nav-box h3 {
+    margin: 5px 0;
+    color: #0077b6;
+    font-size: 18px;
+}
+
+.nav-box p {
+    margin: 5px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #dc3545;
+}
