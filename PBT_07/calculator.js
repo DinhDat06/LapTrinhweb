@@ -20,7 +20,7 @@ function calculate(num1,operator, num2 ) {
         default:
             return `Lỗi: Phép toán '${operator}' không hợp lệ`;
     }
-}
+} 
 // Test:
 console.log(calculate(10, "+", 5));  
 console.log(calculate(10, "/", 0));   
