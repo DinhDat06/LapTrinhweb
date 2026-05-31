@@ -224,6 +224,3 @@ document.body.appendChild(fragment);
 
 - Nhanh hơn vì DocumentFragment là một node ảo tồn tại trong bộ nhớ, không gắn vào DOM thật. Khi appendChild vào fragment, browser không cần tính lại layout vì fragment không hiển thị. Chỉ đến bước cuối khi append fragment vào body, browser mới thực hiện đúng 1 lần reflow cho toàn bộ 1000 elements cùng lúc.
 
-# PHẦN D — VIDEO THỰC HÀNH OBS
-
-- Link video PBT 09: https://youtu.be/e_cF42WMXFU
