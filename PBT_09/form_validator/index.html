@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="styeless.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Đăng ký tài khoản</h1>
+
+        <form id="registerForm">
+
+            <label>Họ tên</label>
+            <input type="text" id="name">
+            <small id="nameMsg"></small>
+
+            <label>Email</label>
+            <input type="text" id="email">
+            <small id="emailMsg"></small>
+
+            <label>Password</label>
+            <input type="password" id="password">
+
+            <div class="bar">
+                <div id="strengthBar"></div>
+            </div>
+
+            <small id="passwordMsg"></small>
+
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword">
+            <small id="confirmMsg"></small>
+
+            <label>Số điện thoại</label>
+            <input type="text" id="phone" maxlength="12">
+            <small id="phoneMsg"></small>
+
+            <button id="submitBtn" disabled>
+                Đăng ký
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
