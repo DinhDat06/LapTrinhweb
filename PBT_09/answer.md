@@ -1,26 +1,26 @@
 Phần A:
 
 Câu A1:
-<div id="app">
-    <header>
-        <h1>Todo App</h1>
-        <nav>
-            <a href="#" class="active">All</a>
-            <a href="#">Active</a>
-            <a href="#">Completed</a>
-        </nav>
-    </header>
-    <main>
-        <form id="todoForm">
-            <input id="todoInput" type="text">
-            <button type="submit">Add</button>
-        </form>
-        <ul id="todoList">
-            <li class="todo-item">Learn HTML</li>
-            <li class="todo-item completed">Learn CSS</li>
-        </ul>
-    </main>
-</div>
+        <div id="app">
+            <header>
+                <h1>Todo App</h1>
+                <nav>
+                    <a href="#" class="active">All</a>
+                    <a href="#">Active</a>
+                    <a href="#">Completed</a>
+                </nav>
+            </header>
+            <main>
+                <form id="todoForm">
+                    <input id="todoInput" type="text">
+                    <button type="submit">Add</button>
+                </form>
+                <ul id="todoList">
+                    <li class="todo-item">Learn HTML</li>
+                    <li class="todo-item completed">Learn CSS</li>
+                </ul>
+            </main>
+        </div>
 1. vẽ sơ đồ cây:
                   div#app
                  /       \
@@ -56,7 +56,8 @@ Câu A3:
 
 Phần C: Debug và phân tích
 
-Câu C1 — Debug DOM Code
+Câu C1 
+- Debug DOM Code
 const countDisplay = document.querySelector(".count");
 const historyList = document.getElementById("history");
 
@@ -116,7 +117,8 @@ window.addEventListener("load", () => {
   const savedHistory = localStorage.getItem("history");
   if (savedHistory) historyList.innerHTML = savedHistory;
 });
-Câu C2 — Performance
+Câu C2
+- Performance
 Giải thích: Tại sao bind event lên 1000 elements riêng lẻ là BAD PRACTICE? Event Delegation giải quyết thế nào?
 Tại sao bind lên 1000 elements là bad practice
 Mỗi addEventListener tốn bộ nhớ. 1000 elements = 1000 event listeners tồn tại trong heap.
