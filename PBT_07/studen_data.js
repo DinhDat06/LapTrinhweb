@@ -32,7 +32,7 @@ for (let i = 0; i < students.length; i++) {
     }
     if (students[i].gender === "M") {
         nam++;
-        diemnam += diemTB; 
+        diemnam += diemTB;  
     }
     if (students[i].gender === "F") {
         nu++;
