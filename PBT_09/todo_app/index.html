@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Todo App</h1>
+
+        <!-- Thêm todo -->
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Nhập công việc...">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <!-- Danh sách todo -->
+        <ul id="todoList">
+
+            <!-- JS sẽ createElement() các li ở đây -->
+
+        </ul>
+
+        <!-- Footer -->
+        <div class="footer">
+
+            <!-- Counter -->
+            <p id="counter"> 0 items left</p>
+
+            <div class="filters">
+                <button id="filterAll">All</button>
+
+                <button id="filterActive">Active</button>
+
+                <button id="filterCompleted">Completed</button>
+            </div><br>
+
+            <!-- Clear -->
+            <button id="clearCompleted">Clear Completed</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
