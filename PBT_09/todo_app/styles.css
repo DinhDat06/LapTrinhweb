@@ -1,45 +1,39 @@
 body{
-    font-family: Arial, sans-serif;
-    background:#f4f4f4;
+  font-family: Arial, sans-serif;
+  margin:20px;
 }
-
-.container{
-    width:500px;
-    margin:30px auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
+.controls{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+  flex-wrap:wrap;
 }
-
-.input-group{
-    display:flex;
-    gap:10px;
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:15px;
 }
-
-input{
-    flex:1;
-    padding:10px;
+.card{
+  border:1px solid #ccc;
+  padding:10px;
+  border-radius:8px;
 }
-
+.dark{
+  background:#222;
+  color:white;
+}
 button{
-    padding:10px;
-    cursor:pointer;
+  cursor:pointer;
 }
-
-li{
-    display:flex;
-    justify-content:space-between;
-    padding:10px;
-    margin:5px 0;
-    background:#eee;
-    border-radius:5px;
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
-
-.todo-text{
-    cursor:pointer;
-}
-
-.completed{
-    text-decoration: line-through;
-    color:gray;
+.modal-content{
+  background:white;
+  padding:20px;
 }
