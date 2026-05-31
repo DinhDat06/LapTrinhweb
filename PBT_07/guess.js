@@ -15,7 +15,7 @@ while (count < 7) {
     if (guessed.includes(guess)) {
         alert("Bạn đã đoán số này rồi!");
         continue;
-    }
+    } 
 
     guessed.push(guess);
     count++;
