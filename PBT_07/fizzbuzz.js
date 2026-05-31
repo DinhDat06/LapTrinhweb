@@ -17,7 +17,7 @@ function customFizzBuzz(n, rules) {
             if (i % luatHienTai.divisor === 0) {
                 ketQua += luatHienTai.word;
             }
-        }
+        } 
         if (ketQua !== "") {
             console.log( i + " - " + ketQua);
         }
