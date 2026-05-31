@@ -3,8 +3,8 @@ console.log(x);
 var x = 5;
 
 // Đoạn 2
-console.log(y);
-let y = 10;
+//console.log(y);
+//let y = 10;
 
 // Đoạn 3
 const z = 15;
