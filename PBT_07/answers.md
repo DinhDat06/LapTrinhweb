@@ -76,3 +76,40 @@ var html = `
     <p>${description}</p>
     <span>Giá: ${price}đ</span>
 </div>
+Phần C:
+
+Câu C1:
+        function tinhGiaGiamGia(giaBan, phanTramGiam) {
+            if (phanTramGiam < 0 || phanTramGiam > 100) {
+                return "Phần trăm giảm không hợp lệ"
+            }
+            
+            var giamGia = giaBan * phanTramGiam / 100
+            let giaSauGiam = giaBan - giamGia
+            
+            if (giaSauGiam = 0) {
+                console.log("Sản phẩm miễn phí!")
+            }
+            
+            return giaSauGiam
+        }
+
+        // Test
+        const gia = tinhGiaGiamGia("100000", 20)
+        console.log("Giá sau giảm: " + gia + "đ")
+
+        const gia2 = tinhGiaGiamGia(50000, 110)
+        console.log("Giá: " + gia2)
+
+        for (var i = 0; i < 5; i++) {
+            setTimeout(function() {
+                console.log("Item " + i)
+            }, 1000)
+        }
+-> các lỗi:
+1. giaBan là chuỗi thay vì số --> khi test giá ở dưới là chuỗi thay vì số vẫn ra đáp án nhưng thực chất không đúng 
+2. Không kiểm tra lại typeof của giaBan--> khi không kiểm tra typeof  thì khi tính giamGia sẽ bị lỗi nếu như giaBan là chữ cái hoặc  kí tự đặc biệt
+3. Không kiểm tra lại typeof của phanTramGiam là số-->khi không kiểm tra typeof  thì khi tính giamGia sẽ bị lỗi nếu như phanTramGiam là chữ cái hoặc kí tự đặc biệt
+4. Dùng sai toán tử khi so sánh ở: if (giaSauGiam = 0)-> phải là ==
+5. Không nên gán var : var giamGia = giaBan * phanTramGiam / 100 -> gán var sẽ không thay đổi được
+6. Không nên dùng var trong vòng lặp: for (var i = 0; i < 5; i++)-> gán bằng var chỉ in ra đúng 1 giá trị-> đây chính là lỗi ẩn vì khi đó chỉ in ra "Item 5'mà thôi phải sửa lại bằng let
